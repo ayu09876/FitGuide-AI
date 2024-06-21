@@ -1,4 +1,4 @@
-<h1 align="center"> FitGuide Chatbot with WatsonXDiscovery integrated to WatsonXAssistant for Deployment & Web Integration </h1>
+![image](https://github.com/ayu09876/FitGuide-AI/assets/131333064/b0c617ee-b285-4ecd-888f-470dfa443388)![image](https://github.com/ayu09876/FitGuide-AI/assets/131333064/9693532e-700a-44a5-ad22-0c2c11fb9aef)![image](https://github.com/ayu09876/FitGuide-AI/assets/131333064/c68a236d-2c3e-4bb8-8994-1079d7df3b71)<h1 align="center"> FitGuide Chatbot with WatsonXDiscovery integrated to WatsonXAssistant for Deployment & Web Integration </h1>
 
 <p> 
 Proyek ini menggunakan IBM Watson Discovery dan Watsonx Assistant untuk membangun chatbot cerdas. Data yang sudah dipreproses dilatih menggunakan Watson Discovery untuk klasifikasi teks, yang membantu dalam mengidentifikasi topik, sentimen, dan maksud pengguna. Model yang sudah dilatih kemudian diintegrasikan ke dalam Watsonx Assistant, memungkinkan chatbot untuk memproses input pengguna, memahami maksudnya, dan memberikan respons yang relevan. Deployment da Integrasi web menggunakan WatsonXAssistant  dari IBM Cloud.
@@ -74,7 +74,7 @@ Dataset yang telah di preprocessing kemudian dilatih untuk mengklasifikasikan te
 
 - Model Building, Training, and Evaluation <br />
 Berikut Project Prototype Flow:
-![Datasets](Dokumentasi\AIProjectProtoFlow.png)
+![Datasets](Dokumentasi/AIProjectProtoFlow.png)
 Penjelasan:<br />
 // Dataset Collection: Langkah pertama adalah mengumpulkan dataset yang diperlukan untuk melatih model. <br />
 // Watson Discovery: Data yang terkumpul kemudian dimasukkan ke dalam Watson Discovery untuk dianalisis. Watson Discovery digunakan untuk memahami dan mengekstraksi informasi dari data yang besar dan kompleks.<br />
@@ -87,7 +87,7 @@ Penjelasan:<br />
 
 ## Prototype
 Flow prototype chatbot pada website FitGuide:
-![Datasets](Dokumentasi\prototype.png)
+![Datasets](Dokumentasi/prototype.png)
 Penjelasan:<br />
 // Input Username Password: Pengguna harus memasukkan nama pengguna dan kata sandi mereka ke web FitGuide <br />
 // Login: Proses autentikasi. Jika autentikasi gagal (false), pengguna tidak dapat melanjutkan. Jika autentikasi berhasil (true), pengguna diarahkan ke halaman berikutnya.<br />
@@ -107,14 +107,14 @@ Menggunakan layanan Watsonx Assistant yang diintegrasikan dengan Watson Discover
 - Tampilan menu integrations.
 - Cari bagian extensions, pilih search, dan klik open.
 - Pilih watson discovery.
-![Datasets](Dokumentasi\deployintegrasi-1.png)
+![Datasets](Dokumentasi/deployintegrasi-1.png)
 - Memilih instansi Discovery untuk dihubungkan dengan Watsonx assistant.
 - Memilih proyek watson discovery yang ingin diintegrasikan. Setelah itu klik next.
-![Datasets](Dokumentasi\deployintegrasi-2.png)
+![Datasets](Dokumentasi/deployintegrasi-2.png)
 - Pada halaman Search integration masukkan Title yang diinginkan, memilih Body yang nantinya menjadi jawaban dari input yang user berikan.
 - Melihat preview contoh tampilan chatbot yang telah terintegrasi.
 - Scroll kebawah pada halaman Search integration untuk mengatur Message jika model dapat menemukan jawaban dari user, pada proyek ini kami kosongkan sehingga pada contoh tertulis Search results sebelum jawaban model.
-![Datasets](Dokumentasi\deployintegrasi-3.png)
+![Datasets](Dokumentasi/deployintegrasi-3.png)
 - Uji hasil integrasi dengan menanyakan pertanyaan berhubungan dengan makanan bernutrisi.
 - Setelah Watsonx assistant dapat mendapat jawaban dari watson discovery, lalu klik save.
 - Masuk ke menu action untuk memanggil model ke Watsonx assistant.
@@ -124,22 +124,22 @@ Menggunakan layanan Watsonx Assistant yang diintegrasikan dengan Watson Discover
 - Tampilan action baru.
 - Pada conversation steps isi nama step menjadi sent to wd untuk mengarahkan inputan user ke model.
 - Pilih Search for the answer agar terhubung dengan integrasi sebelumnya.
-![Datasets](Dokumentasi\deployintegrasi-4.png)
+![Datasets](Dokumentasi/deployintegrasi-4.png)
 - Klik New step untuk membuat step baru.
 - Pada step kedua ini beri nama reask untuk membuat proses tanya jawab di chatbot berulang atau tidak berakhir setelah mengeluarkan satu jawaban. Jadi intinya menambah kan action & step yang cukup sesuai kebutuhan sampai akhirnya menjadi seperti ini.
-![Datasets](Dokumentasi\deployintegrasi-5.png)
+![Datasets](Dokumentasi/deployintegrasi-5.png)
 - Tampilan preview chatbot dan coba dengan memasukkan input mulai maka chatbot akan menjawab sesuai yang telah diatur pada action start. Coba dengan memasukkan pertanyaan seputar rekomendasi makanan bernutrisi. Chatbot dapat menjawab pertanyaan sesuai dengan data di watson discovery.
 - Setelah itu masuk ke menu preview untuk mengubah tampilan chatbot. Pilih Customize web chat.
 - Pada menu style dapat merubah nama dan warna chatbot assistant dan pada menu Launcher dapat mengubah tulisan Greeting message.
 - Menu home screen untuk mengubah teks awal saat chatbot di klik dan menampilkan rekomendasi kata kunci untuk memulai percakapan, akhirnya jadi seperti ini.
-![Datasets](Dokumentasi\deployintegrasi-last.png)
+![Datasets](Dokumentasi/deployintegrasi-last.png)
 - Pada menu embed, terdapat kode untuk di deploy ke platform yang dikembangkan.
 - Tinggal diberikan kepada pihak web.
-![Datasets](Dokumentasi\webintegrasi.png)
+![Datasets](Dokumentasi/webintegrasi.png)
 
 ## Integrasi & Evaluasi
 Integrasi model AI dengan website ini bertujuan untuk menyediakan panduan olahraga dan rekomendasi pola hidup sehat bagi mahasiswa secara efektif. Dengan memanfaatkan layanan IBM Cloud seperti Watson Discovery dan Watsonx Assistant, solusi cerdas dan intuitif dapat tercipta. Proses ini dimulai dengan persiapan model AI, di mana Watson Discovery digunakan untuk mengumpulkan, menganalisis, dan mengekstrak wawasan dari data relevan, serta mengidentifikasi pola dan tren yang dapat membantu dalam memberikan rekomendasi kebugaran dan nutrisi. Selanjutnya, Watsonx Assistant dirancang untuk merancang dialog dan skenario interaksi, dilatih menggunakan data dialog yang relevan agar mampu menjawab pertanyaan pengguna terkait kebugaran dan nutrisi, serta diintegrasikan dengan wawasan dari Watson Discovery. Integrasi model dengan website dilakukan melalui API yang disediakan oleh IBM Cloud, memastikan bahwa model dapat menangani permintaan pengguna dan memberikan respons yang tepat. UI website juga diatur agar dapat menampilkan rekomendasi dan tanggapan dari AI secara real-time, sehingga memberikan pengalaman interaktif dan informatif bagi pengguna.<br />
-![Datasets](Dokumentasi\ujicoba.png)
+![Datasets](Dokumentasi/ujicoba.png)
 
 
 LINK TEST DEPOLYMENT : [test](https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fus-south.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-22c96dc6-a64f-47c2-b303-cd66de3e4bc8%3A%3Ae7987399-4106-47d1-915c-2bc31a2ee395&integrationID=c290e65e-5595-49d5-b26d-cc64ea884c97&region=us-south&serviceInstanceID=22c96dc6-a64f-47c2-b303-cd66de3e4bc8)
@@ -148,7 +148,7 @@ LINK TEST DEPOLYMENT : [test](https://web-chat.global.assistant.watson.appdomain
 Proyek FitGuide telah berhasil mencapai sejumlah tujuan penting dengan memanfaatkan teknologi AI dan platform web. FitGuide memberikan solusi inovatif untuk membantu mahasiswa mencapai kebugaran dan kesehatan optimal melalui panduan olahraga yang aman dan disesuaikan serta rekomendasi pola hidup sehat. Proyek ini tidak hanya meningkatkan aksesibilitas olahraga bagi mahasiswa melalui integrasi dengan website yang terintegrasi AI, tetapi juga membantu mengurangi biaya ke gym dan meningkatkan efisiensi waktu mahasiswa. FitGuide menjamin kualitas layanan melalui proses training dan uji coba yang ketat, serta berhasil menjangkau mahasiswa dengan berbagai kebutuhan kesehatan, termasuk mereka yang mengalami obesitas atau memiliki jadwal padat. Secara teknologi, FitGuide berkontribusi pada bidang sains dan teknologi dengan mengembangkan model kecerdasan buatan yang akurat dan memanfaatkan visualisasi data untuk pemahaman yang lebih baik terhadap tren dan pola. Melalui penggunaan IBM Cloud services seperti Watson Discovery dan Watsonx Assistant, proyek ini menunjukkan integrasi teknologi maju dalam mendukung solusi kesehatan dan kebugaran yang lebih baik. Untuk masa depan, FitGuide merencanakan pengembangan dengan fokus pada meningkatkan akurasi AI, memperluas dataset, meningkatkan UX, validasi data nutrisi, serta integrasi layanan tambahan untuk meningkatkan fungsi dan fleksibilitas platform.
 
 ## Other Documentation
-[DOC DRIVE 1 UNUSED](https://drive.google.com/drive/folders/1izdJnOLYQ2qRy8WwH30xPmU__Uva5KaA?usp=sharing)
+[DOC DRIVE 1 UNUSED](https://drive.google.com/drive/folders/1izdJnOLYQ2qRy8WwH30xPmU__Uva5KaA?usp=sharing)<br/>
 [DOC DRIVE 2 USED & UNUSED](https://drive.google.com/drive/folders/1n0zkms86B8fAbbyFvx_26NwZ3U8YJ_OK?usp=sharing)
 
 ---
