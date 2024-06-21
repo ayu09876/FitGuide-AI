@@ -1,4 +1,4 @@
-![image](https://github.com/ayu09876/FitGuide-AI/assets/131333064/b0c617ee-b285-4ecd-888f-470dfa443388)![image](https://github.com/ayu09876/FitGuide-AI/assets/131333064/9693532e-700a-44a5-ad22-0c2c11fb9aef)![image](https://github.com/ayu09876/FitGuide-AI/assets/131333064/c68a236d-2c3e-4bb8-8994-1079d7df3b71)<h1 align="center"> FitGuide Chatbot with WatsonXDiscovery integrated to WatsonXAssistant for Deployment & Web Integration </h1>
+<h1 align="center"> FitGuide Chatbot with WatsonXDiscovery integrated to WatsonXAssistant for Deployment & Web Integration </h1>
 
 <p> 
 Proyek ini menggunakan IBM Watson Discovery dan Watsonx Assistant untuk membangun chatbot cerdas. Data yang sudah dipreproses dilatih menggunakan Watson Discovery untuk klasifikasi teks, yang membantu dalam mengidentifikasi topik, sentimen, dan maksud pengguna. Model yang sudah dilatih kemudian diintegrasikan ke dalam Watsonx Assistant, memungkinkan chatbot untuk memproses input pengguna, memahami maksudnya, dan memberikan respons yang relevan. Deployment da Integrasi web menggunakan WatsonXAssistant  dari IBM Cloud.
